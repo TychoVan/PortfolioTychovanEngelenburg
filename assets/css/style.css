@@ -471,6 +471,12 @@ section {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
+.portfolio .portfolio-item h3{
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+  color: #173b6c;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
@@ -515,31 +521,12 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+  /* set pointer-events to none to allow underlying events (important for clicking the <a> tag) */
+  pointer-events: none;
 }
 .portfolio .portfolio-wrap .portfolio-links {
   opacity: 1;
-  left: 0;
-  right: 0;
-  bottom: -60px;
   z-index: 3;
-  position: absolute;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  justify-content: center;
-}
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  font-size: 28px;
-  text-align: center;
-  background: rgba(20, 157, 221, 0.75);
-  transition: 0.3s;
-  width: 50%;
-}
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
-}
-.portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
 }
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
