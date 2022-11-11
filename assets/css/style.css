@@ -569,6 +569,7 @@ section {
   background-color: #149ddd;
 }
 .portfolio-details .portfolio-info {
+  border-radius: 5px;
   padding: 30px;
   box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
 }
@@ -731,6 +732,7 @@ section {
   padding-bottom: 130px;
 }
 .contact .info {
+  border-radius: 7px;
   padding: 30px;
   background: #fff;
   width: 100%;
