@@ -599,16 +599,18 @@ section {
   padding: 0;
 }
 
-.codeSnippet {
+.code-snippet {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 10px;
+  margin-right: 6px;
 }
 
-.codeSnippet:hover {opacity: 0.7;}
+.code-snippet:hover {opacity: 0.7;}
 
 /* The Modal (background) */
-.modal {
+.detail-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 10000; /* Sit on top */
