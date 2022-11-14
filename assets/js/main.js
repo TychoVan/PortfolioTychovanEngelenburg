@@ -248,10 +248,10 @@
   });
 
   // Get the modal
-  var modal = document.getElementById("modal-img");
-  
+  var modal = document.getElementById("modal-img");  
   var collection = document.getElementsByClassName("code-snippet");
-  
+  var captionText = document.getElementById("caption");
+
   for (var i = 0; i < collection.length; i++) {
     // Get the image and insert it inside the modal - use its "alt" text as a caption
     collection[i].addEventListener("click", function() {
@@ -259,6 +259,7 @@
       var modalImg = document.getElementById("m-image");
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
+      console.log(this.alt);
     })
   }
 
