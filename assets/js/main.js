@@ -252,31 +252,31 @@
   var collection = document.getElementsByClassName("code-snippet");
   var captionText = document.getElementById("caption");
 
-  for (var i = 0; i < collection.length; i++) {
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    collection[i].addEventListener("click", function() {
-      modal.style.display = "block";
-      var modalImg = document.getElementById("m-image");
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    })
-  }
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  document.addEventListener( "keydown", function(event) {
-    if(modal.style.display != "none"){
-        if(event.key == "Escape") modal.style.display = "none";
+  if(modal != null)
+  {
+    for (var i = 0; i < collection.length; i++) {
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      collection[i].addEventListener("click", function() {
+        modal.style.display = "block";
+        var modalImg = document.getElementById("m-image");
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      })
     }
-  });
-
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-
+  
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+  
+    document.addEventListener( "keydown", function(event) {
+      if(modal.style.display != "none"){
+          if(event.key == "Escape") modal.style.display = "none";
+      }
+    });
   
   
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+  }  
 })()
