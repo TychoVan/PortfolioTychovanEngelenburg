@@ -422,6 +422,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+.portfolio#portfolio { 
+  padding:60px 
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
     border-radius: 7px;
