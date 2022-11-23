@@ -503,6 +503,9 @@ section {
   opacity: 1;
   bottom: 0;
 }
+.portfolio .portfolio-end-section{
+  text-align: center;
+}
 
 
 /*--------------------------------------------------------------
